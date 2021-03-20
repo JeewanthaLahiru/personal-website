@@ -1,5 +1,25 @@
 .side-nav-bar{
-  color: $font-light;
+  .side-nav-bar-item{
+    .navbar-nav{
+      .nav-item{
+        .nav-link{
+          border: 2px solid transparent;
+          color: $font-light;
+        }
+      }
+      .nav-item:hover{
+        .nav-link{
+          border-left-color: $primary-color;
+        }
+      }
+      .nav-item.active{
+        color: red;
+        color: $font-light;
+        border: 2px solid transparent;
+        border-left-color: $primary-color;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 762px) {
