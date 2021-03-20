@@ -4,7 +4,7 @@ import {Button, Col, Form, FormControl, Nav, Navbar, NavDropdown, Row} from "rea
 const SideNav:React.FC = () => {
     return(
             <Col md={3} className="side-nav-bar" >
-                <Navbar bg="light" expand="md">
+                <Navbar expand="md">
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Row className="side-nav-bar-item">

@@ -1,20 +1,23 @@
 .side-nav-bar{
-
+  color: $font-light;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 762px) {
   .side-nav-bar{
-    background: black;
-    height: 500px;
+    background-color: $dark-background ;
+    height: 100vh;
     .side-nav-bar-item{
         position: fixed;
         top: 56px;
         left: 10px;
-        width: 200px;
-        height: 100%;
+        width: 25%;
+        height: 100vh;
         overflow-y: auto;
         padding-top: 30px;
-      padding-left: 30px;
+      color: white;
+      .nav-item{
+        color: white;
+      }
     }
   }
 }
