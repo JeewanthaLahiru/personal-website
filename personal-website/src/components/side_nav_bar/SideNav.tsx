@@ -5,7 +5,7 @@ import Particles from '../../assets/images/spakly/particles.gif';
 const SideNav:React.FC = () => {
 
     return(
-            <Col md={2} className="side-nav-bar m-0" >
+            <div className="side-nav-bar m-0" >
                 <Navbar expand="md">
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -43,7 +43,7 @@ const SideNav:React.FC = () => {
                     </Navbar.Collapse>
 
                 </Navbar>
-            </Col>
+            </div>
 
     )
 }
