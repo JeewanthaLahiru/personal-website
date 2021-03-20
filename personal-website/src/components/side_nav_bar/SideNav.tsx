@@ -18,24 +18,38 @@ const SideNav:React.FC = () => {
                                 <ul className="navbar-nav mr-auto flex-column vertical-nav">
                                     <Nav.Item>
                                         <Nav.Link className="text-left">
-                                            Profile
-
-                                            <i className="fa fa-user-circle text-white"></i>
+                                            &nbsp;&nbsp;<i className="feather icon-user" />
+                                            &nbsp;&nbsp;Profile
                                         </Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
                                         <Nav.Link className="text-left">
-                                            Education
+                                            &nbsp;&nbsp;<i className="feather icon-pie-chart" />
+                                            &nbsp;&nbsp;Stats
                                         </Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
                                         <Nav.Link className="text-left">
-                                            Portfolio
+                                            &nbsp;&nbsp;<i className="feather icon-hard-drive" />
+                                            &nbsp;&nbsp;Education
                                         </Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
                                         <Nav.Link className="text-left">
-                                            Contact
+                                            &nbsp;&nbsp;<i className="feather icon-bar-chart-2" />
+                                            &nbsp;&nbsp;Skills
+                                        </Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link className="text-left">
+                                            &nbsp;&nbsp;<i className="feather icon-box" />
+                                            &nbsp;&nbsp;Portfolio
+                                        </Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link className="text-left">
+                                            &nbsp;&nbsp;<i className="feather icon-smartphone" />
+                                            &nbsp;&nbsp;Contact
                                         </Nav.Link>
                                     </Nav.Item>
                                 </ul>

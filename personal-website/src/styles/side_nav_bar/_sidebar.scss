@@ -13,6 +13,9 @@
   .side-nav-bar-item{
     .navbar-nav{
       .nav-item{
+        i{
+          color: $primary-color;
+        }
         .nav-link{
           border: 2px solid transparent;
           color: $font-light;
@@ -35,7 +38,7 @@
 
 @media screen and (min-width: 762px) {
   .side-nav-bar{
-    width:200px;
+    width:250px;
     background-color: $dark-background ;
     height: 100vh;
     .side-nav-bar-item{
