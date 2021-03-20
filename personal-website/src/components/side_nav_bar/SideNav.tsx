@@ -1,6 +1,5 @@
 import React from 'react';
-import {Button, Col, Form, FormControl, Image, Nav, Navbar, NavDropdown, Row} from "react-bootstrap";
-import Particles from '../../assets/images/spakly/particles.gif';
+import {Col, Nav, Navbar, Row} from "react-bootstrap";
 
 const SideNav:React.FC = () => {
 
@@ -20,6 +19,8 @@ const SideNav:React.FC = () => {
                                     <Nav.Item>
                                         <Nav.Link className="text-left">
                                             Profile
+
+                                            <i className="fa fa-user-circle text-white"></i>
                                         </Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
