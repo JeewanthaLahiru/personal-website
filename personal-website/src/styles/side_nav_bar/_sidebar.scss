@@ -1,4 +1,15 @@
+
+
 .side-nav-bar{
+  .row{
+    width: 100%;
+  }
+
+  .brand-name{
+    font-size: 2.2em;
+    background: url('/assets/images/spakly/sparkles.gif');
+  }
+
   .side-nav-bar-item{
     .navbar-nav{
       .nav-item{
@@ -28,7 +39,7 @@
     height: 100vh;
     .side-nav-bar-item{
         position: fixed;
-        top: 56px;
+      top: 100px;
         left: 10px;
         width: 25%;
         height: 100vh;
