@@ -32,19 +32,25 @@ const SideNav:React.FC = () => {
                                     &nbsp;&nbsp;Education
                                 </li>
                             </Link>
+                            <Link to="/skills">
+                                <li>
+                                    &nbsp;&nbsp;<i className="feather icon-bar-chart-2"/>
+                                    &nbsp;&nbsp;Skills
+                                </li>
+                            </Link>
+                            <Link to="profile">
+                                <li>
+                                    &nbsp;&nbsp;<i className="feather icon-user" />
+                                    &nbsp;&nbsp;Profile
+                                </li>
+                            </Link>
+                            <Link to="contact" >
+                                <li>
+                                    &nbsp;&nbsp;<i className="feather icon-smartphone"/>
+                                    &nbsp;&nbsp;Contact
+                                </li>
+                            </Link>
 
-                            <li>
-                                &nbsp;&nbsp;<i className="feather icon-bar-chart-2"/>
-                                &nbsp;&nbsp;Skills
-                            </li>
-                            <li>
-                                &nbsp;&nbsp;<i className="feather icon-user" />
-                                &nbsp;&nbsp;Profile
-                            </li>
-                            <li>
-                                &nbsp;&nbsp;<i className="feather icon-smartphone"/>
-                                &nbsp;&nbsp;Contact
-                            </li>
                         </ul>
                     </Col>
                 </Row>
