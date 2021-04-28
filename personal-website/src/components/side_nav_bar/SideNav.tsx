@@ -1,5 +1,6 @@
 import React from 'react';
 import {Col, Nav, Navbar, Row} from "react-bootstrap";
+import {Link} from 'react-router-dom';
 
 const SideNav:React.FC = () => {
 
@@ -13,18 +14,25 @@ const SideNav:React.FC = () => {
                 <Row>
                     <Col>
                         <ul>
-                            <li>
-                                &nbsp;&nbsp;<i className="feather icon-user" />
-                                &nbsp;&nbsp;Profile
-                            </li>
-                            <li>
-                                &nbsp;&nbsp;<i className="feather icon-pie-chart"/>
-                                &nbsp;&nbsp;Stats
-                            </li>
-                            <li>
-                                &nbsp;&nbsp;<i className="feather icon-hard-drive"/>
-                                &nbsp;&nbsp;Education
-                            </li>
+                            <Link to="/" >
+                                <li>
+                                    &nbsp;&nbsp;<i className="feather icon-user" />
+                                    &nbsp;&nbsp;Profile
+                                </li>
+                            </Link>
+                            <Link to="/stats" >
+                                <li>
+                                    &nbsp;&nbsp;<i className="feather icon-pie-chart"/>
+                                    &nbsp;&nbsp;Stats
+                                </li>
+                            </Link>
+                            <Link to="/education">
+                                <li>
+                                    &nbsp;&nbsp;<i className="feather icon-hard-drive"/>
+                                    &nbsp;&nbsp;Education
+                                </li>
+                            </Link>
+
                             <li>
                                 &nbsp;&nbsp;<i className="feather icon-bar-chart-2"/>
                                 &nbsp;&nbsp;Skills
