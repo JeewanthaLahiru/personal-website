@@ -40,8 +40,8 @@ const SideNav:React.FC = () => {
                             </Link>
                             <Link to="profile">
                                 <li>
-                                    &nbsp;&nbsp;<i className="feather icon-user" />
-                                    &nbsp;&nbsp;Profile
+                                    &nbsp;&nbsp;<i className="feather icon-box" />
+                                    &nbsp;&nbsp;Portfolio
                                 </li>
                             </Link>
                             <Link to="contact" >
@@ -64,7 +64,7 @@ const SideNav:React.FC = () => {
                                     <Nav.Item>
                                         <Nav.Link className="text-left">
                                             &nbsp;&nbsp;<i className="feather icon-user"/>
-                                            &nbsp;&nbsp;Profile
+                                            &nbsp;&nbsp;Portfolio
                                         </Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
