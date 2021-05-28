@@ -1,4 +1,35 @@
 .portfolio-item{
   background-color: white;
   border-radius: 5px;
+
+  .title-row{
+    height: 80px;
+    .title-logo{
+      height: 100%;
+      img{
+        height: 100%;
+      }
+    }
+
+    .title-name{
+      .title-main{
+        font-size: 1.8rem;
+        text-align: left;
+        font-weight: bold;
+      }
+      .title-time{
+        text-align: left;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .technology-row{
+    .tech-item{
+      padding: 15px;
+      img{
+        width: 100%;
+      }
+    }
+  }
 }
