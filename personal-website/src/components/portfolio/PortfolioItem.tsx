@@ -107,8 +107,8 @@ const PortfolioItem:React.FC<portfolioItemProps> = (props) => {
                         <Col xs={12} > {description} </Col>
 
                     </Row>
-                    <Row className="justify-content-center mt-3 social-link-row" >
-                        <Col xs={3}
+                    <Row className="justify-content-center mx-0 mt-3 social-link-row" >
+                        <Col xs={4}
                              onClick={()=> onClickSourceHandler(githubLink)}
                              className="social-link"
                         >
@@ -116,7 +116,7 @@ const PortfolioItem:React.FC<portfolioItemProps> = (props) => {
                             Source
                         </Col>
                         {   demo !== "" &&
-                            <Col xs={3}
+                            <Col xs={4}
                                 onClick={() => onClickSourceHandler(demo)}
                                  className="social-link"
                             >
