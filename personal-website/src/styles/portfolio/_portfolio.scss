@@ -1,0 +1,194 @@
+.portfolio-item{
+  background-color: white;
+  border-radius: 5px;
+
+  .title-row{
+    height: 80px;
+    .title-logo{
+      height: 100%;
+      img{
+        width: 100%;
+      }
+    }
+
+    .title-name{
+      .title-main{
+        font-size: 1.4rem;
+        text-align: left;
+        font-weight: bold;
+      }
+      .title-time{
+        text-align: left;
+        font-size: 0.8rem;
+        color: #636363;
+      }
+    }
+  }
+
+  .description{
+    height: 80px;
+    .col{
+      vertical-align: baseline;
+    }
+  }
+
+  .social-link-row{
+    .social-link{
+      color: blue;
+    }
+  }
+
+  .technology-row{
+    height: 50px ;
+    .tech-item{
+      img{
+        width: 28px;
+        height: auto;
+      }
+    }
+  }
+
+  .social-link:hover{
+    cursor: pointer;
+  }
+
+}
+
+@media only screen and (min-width: 1500px){
+  .portfolio-item{
+    .technology-row{
+      padding: 0 60px ;
+    }
+  }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1200px) {
+  .portfolio-item{
+    .title-row{
+      height: 100px;
+      .title-logo{
+        padding: 0;
+        height: 100%;
+        img{
+          width: 100%;
+        }
+      }
+
+      .title-name{
+        .title-main{
+          font-size: 1rem;
+          text-align: left;
+          font-weight: bold;
+        }
+        .title-time{
+          text-align: left;
+          font-size: 0.7rem;
+          color: #636363;
+        }
+      }
+    }
+
+    .description{
+      height: 180px;
+      .col{
+        vertical-align: baseline;
+      }
+    }
+    .technology-row{
+      .tech-item{
+        img{
+          width: 28px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  .portfolio-item{
+    .title-row{
+      height: 70px;
+      .title-logo{
+        padding: 0 13px;
+        height: 100%;
+        img{
+          width: 100%;
+        }
+      }
+
+      .title-name{
+        .title-main{
+          font-size: 1rem;
+          text-align: left;
+          font-weight: bold;
+        }
+        .title-time{
+          text-align: left;
+          font-size: 0.7rem;
+          color: #636363;
+        }
+      }
+    }
+
+    .description{
+      height: 130px;
+      .col{
+        vertical-align: baseline;
+      }
+    }
+    .technology-row{
+      .tech-item{
+        img{
+          width: 28px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 992px) and (min-width: 500px) {
+  .portfolio-item{
+    .title-row{
+      height: 70px;
+      .title-logo{
+        padding: 0 13px;
+        height: 100%;
+        img{
+          height: 100%;
+          width: auto;
+        }
+      }
+
+      .title-name{
+        .title-main{
+          font-size: 1rem;
+          text-align: left;
+          font-weight: bold;
+        }
+        .title-time{
+          text-align: left;
+          font-size: 0.7rem;
+          color: #636363;
+        }
+      }
+    }
+
+    .description{
+      height: 80px;
+      .col{
+        vertical-align: baseline;
+      }
+    }
+    .technology-row{
+      .tech-item{
+        img{
+          width: 28px;
+        }
+      }
+    }
+  }
+}
