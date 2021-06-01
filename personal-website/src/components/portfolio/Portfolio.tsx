@@ -20,25 +20,31 @@ const temporaryPortfolio:IPortfolio[] = [
             },
             {
                 name:'blender'
+            },
+            {
+                name:'csharp'
             }
         ]
     },
     {
-        category:Category.GAMING,
+        category:Category.WEB,
         logo:{
-            name:'unity'
+            name:'react'
         },
-        mainTitle:'GAme',
+        mainTitle:'react',
         timeDuration:"2012",
-        description:"description1",
+        description:"this is a react shopping cart web application",
         githubLink:"githubLink1",
         demo:"demo1",
         technology:[
             {
-                name:'unity'
+                name:'react'
             },
             {
-                name:'blender'
+                name:'typescript'
+            },
+            {
+                name:'graphql'
             }
         ]
     },

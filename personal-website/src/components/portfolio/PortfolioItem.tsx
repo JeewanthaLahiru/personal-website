@@ -1,6 +1,10 @@
 import React from 'react';
 import {Col, Image, Row} from "react-bootstrap";
 import UnityLogo from "../../assets/images/portfolio-image/unity-logo.png";
+import UnrealLogo from "../../assets/images/portfolio-image/unreal.png";
+import ReactLogo from "../../assets/images/portfolio-image/react.png";
+import AngularLogo from "../../assets/images/portfolio-image/angular.png";
+import GraphQlLogo from "../../assets/images/portfolio-image/graphql.png";
 import {ILogo, IPortfolio} from "../../types/portfolioTypes";
 
 type portfolioItemProps = {
@@ -10,6 +14,16 @@ type portfolioItemProps = {
 const findImage = (imgName:string) => {
     switch (imgName){
         case 'unity':
+            return UnityLogo;
+        case 'unreal':
+            return UnrealLogo;
+        case 'react':
+            return ReactLogo;
+        case 'angular':
+            return AngularLogo;
+        case 'graphql':
+            return GraphQlLogo;
+        default:
             return UnityLogo;
     }
 }
@@ -23,7 +37,7 @@ const PortfolioItem:React.FC<portfolioItemProps> = (props) => {
     const description:string = props.portfolioItem.description;
     const githubLink:string = props.portfolioItem.githubLink;
     const demo:string = props.portfolioItem.demo;
-    const technotogy:ILogo[] = props.portfolioItem.technology;
+    const technology:ILogo[] = props.portfolioItem.technology;
 
     return(
         <Col xs={12} sm={12} lg={6} xl={4} className="portfolio-item-border m-0 p-4">
@@ -31,7 +45,7 @@ const PortfolioItem:React.FC<portfolioItemProps> = (props) => {
                 <Col xs={12} >
                     <Row className="title-row m-0 py-2">
                         <Col xs={3} className="title-logo">
-                            <Image src={findImage('unity')} />
+                            <Image src={findImage(logo.name)} />
                         </Col>
                         <Col xs={9} className="title-name" >
                             <Row>
@@ -51,21 +65,19 @@ const PortfolioItem:React.FC<portfolioItemProps> = (props) => {
                     </Row>
                     <hr/>
                     <Row className="m-0 technology-row justify-content-center " >
+                        {
+                            technology.map((tech:ILogo, index:number)=> {
+                                return(
+                                    <Col xs={2} className="tech-item">
+                                        <Image src={findImage(tech.name)}/>
+                                    </Col>
+                                )
+                            })
+                        }
                         <Col xs={2} className="tech-item">
                             <Image src={UnityLogo}/>
                         </Col>
-                        <Col xs={2} className="tech-item">
-                            <Image src={UnityLogo}/>
-                        </Col>
-                        <Col xs={2} className="tech-item">
-                            <Image src={UnityLogo}/>
-                        </Col>
-                        <Col xs={2} className="tech-item">
-                            <Image src={UnityLogo}/>
-                        </Col>
-                        <Col xs={2} className="tech-item">
-                            <Image src={UnityLogo}/>
-                        </Col>
+
                     </Row>
                 </Col>
             </Row>
