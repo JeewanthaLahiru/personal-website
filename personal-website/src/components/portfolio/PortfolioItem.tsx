@@ -5,6 +5,8 @@ import UnrealLogo from "../../assets/images/portfolio-image/unreal.png";
 import ReactLogo from "../../assets/images/portfolio-image/react.png";
 import AngularLogo from "../../assets/images/portfolio-image/angular.png";
 import GraphQlLogo from "../../assets/images/portfolio-image/graphql.png";
+import TypescriptLogo from "../../assets/images/portfolio-image/typescript.png";
+import SassLogo from "../../assets/images/portfolio-image/sass.png";
 import {ILogo, IPortfolio} from "../../types/portfolioTypes";
 
 type portfolioItemProps = {
@@ -23,6 +25,10 @@ const findImage = (imgName:string) => {
             return AngularLogo;
         case 'graphql':
             return GraphQlLogo;
+        case 'typescript':
+            return TypescriptLogo;
+        case 'sass':
+            return SassLogo;
         default:
             return UnityLogo;
     }
@@ -94,9 +100,6 @@ const PortfolioItem:React.FC<portfolioItemProps> = (props) => {
                                 )
                             })
                         }
-                        <Col xs={2} className="tech-item">
-                            <Image src={UnityLogo}/>
-                        </Col>
 
                     </Row>
                 </Col>
