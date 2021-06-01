@@ -57,7 +57,7 @@ const temporaryPortfolio:IPortfolio[] = [
         timeDuration:"May, 2021 – June, 2021",
         description:"This is an online shoping cart application",
         githubLink:"https://github.com/JeewanthaLahiru/online-grocery-app-with-react",
-        demo:"demo1",
+        demo:"https://jeewantha.codes/",
         technology:[
             {
                 name:'react'
