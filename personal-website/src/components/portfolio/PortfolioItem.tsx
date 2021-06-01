@@ -69,7 +69,7 @@ const PortfolioItem:React.FC<portfolioItemProps> = (props) => {
                         </Col>
                     </Row>
                     <hr/>
-                    <Row className="m-0 description" >
+                    <Row className="m-0 description align-items-center" >
                         <Col xs={12} > {description} </Col>
 
                     </Row>
