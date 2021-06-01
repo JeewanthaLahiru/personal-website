@@ -1,20 +1,14 @@
 import React from 'react';
-import {Col, Row} from "react-bootstrap";
+import { Row} from "react-bootstrap";
+import PortfolioItem from "./PortfolioItem";
 
 const Portfolio:React.FC = () => {
     return(
-        <Col xs={6}>
-            <Row>
-                <Col xs={3}>Logo</Col>
-                <Col xs={9}>Title</Col>
+        <React.Fragment>
+            <Row className="m-0">
+                <PortfolioItem/>
             </Row>
-            <Row>
-                <Col xs={12} >Description</Col>
-            </Row>
-            <Row>
-                <Col xs={12}>Social Links</Col>
-            </Row>
-        </Col>
+        </React.Fragment>
     )
 }
 
