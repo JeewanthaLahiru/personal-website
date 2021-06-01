@@ -12,7 +12,7 @@ export enum Category {
 
 export type IPortfolio = {
     category : Category,
-    logo: string,
+    logo: ILogo,
     mainTitle: string,
     timeDuration: string,
     description: string,

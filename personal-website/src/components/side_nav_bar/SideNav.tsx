@@ -1,5 +1,5 @@
 import React from 'react';
-import {Col, Nav, Navbar, Row} from "react-bootstrap";
+import {Col, Row} from "react-bootstrap";
 import {Link} from 'react-router-dom';
 
 const SideNav:React.FC = () => {
