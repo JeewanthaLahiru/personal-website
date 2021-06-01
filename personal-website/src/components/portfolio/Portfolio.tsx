@@ -104,7 +104,7 @@ const temporaryPortfolio:IPortfolio[] = [
     {
         category:Category.GAMING,
         logo:{
-            name:'javacript'
+            name:'javascript'
         },
         mainTitle:'Tic tac toe game',
         timeDuration:"May, 2021 – June, 2021",
@@ -196,7 +196,7 @@ const temporaryPortfolio:IPortfolio[] = [
 
 const Portfolio:React.FC = () => {
 
-    const [category, setCategory] = useState('game');
+    const [category, setCategory] = useState('all');
 
     const onClickAllHandler = () => {
         setCategory("all");
