@@ -7,6 +7,18 @@ import AngularLogo from "../../assets/images/portfolio-image/angular.png";
 import GraphQlLogo from "../../assets/images/portfolio-image/graphql.png";
 import TypescriptLogo from "../../assets/images/portfolio-image/typescript.png";
 import SassLogo from "../../assets/images/portfolio-image/sass.png";
+import CSharpLogo from "../../assets/images/portfolio-image/csharp.png";
+import AndroidLogo from "../../assets/images/portfolio-image/android.png";
+import BootstrapLogo from "../../assets/images/portfolio-image/bootstrap.svg";
+import AwsLogo from "../../assets/images/portfolio-image/aws.png";
+import JavascriptLogo from "../../assets/images/portfolio-image/javascript.png";
+import MongodbLogo from "../../assets/images/portfolio-image/mongodb.jpg";
+import SpringbootLogo from "../../assets/images/portfolio-image/springboot.png";
+import NifiLogo from "../../assets/images/portfolio-image/nifi.png";
+import PhpLogo from "../../assets/images/portfolio-image/php.svg";
+import CssLogo from "../../assets/images/portfolio-image/css.png";
+import HtmlLogo from "../../assets/images/portfolio-image/html.png";
+
 import {ILogo, IPortfolio} from "../../types/portfolioTypes";
 
 type portfolioItemProps = {
@@ -17,6 +29,20 @@ const findImage = (imgName:string) => {
     switch (imgName){
         case 'unity':
             return UnityLogo;
+        case 'html':
+            return HtmlLogo;
+        case 'php':
+            return PhpLogo;
+        case 'css':
+            return CssLogo;
+        case 'nifi':
+            return NifiLogo;
+        case 'springboot':
+            return SpringbootLogo;
+        case 'mongodb':
+            return MongodbLogo;
+        case 'javascript':
+            return JavascriptLogo;
         case 'unreal':
             return UnrealLogo;
         case 'react':
@@ -29,6 +55,14 @@ const findImage = (imgName:string) => {
             return TypescriptLogo;
         case 'sass':
             return SassLogo;
+        case 'csharp':
+            return CSharpLogo;
+        case 'android':
+            return AndroidLogo;
+        case 'bootstrap':
+            return BootstrapLogo;
+        case 'aws':
+            return AwsLogo;
         default:
             return UnityLogo;
     }

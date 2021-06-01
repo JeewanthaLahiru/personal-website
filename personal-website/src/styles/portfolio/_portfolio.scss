@@ -7,7 +7,7 @@
     .title-logo{
       height: 100%;
       img{
-        height: 100%;
+        width: 100%;
       }
     }
 
@@ -40,9 +40,11 @@
 
   .technology-row{
     .tech-item{
-      padding: 15px;
+      padding: 16px;
       img{
-        width: 100%;
+        width: 90%;
+        max-height: 35px;
+        object-fit: cover;
       }
     }
   }
