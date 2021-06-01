@@ -68,8 +68,20 @@ const PortfolioItem:React.FC<portfolioItemProps> = (props) => {
 
                     </Row>
                     <Row className="justify-content-center mt-3" >
-                        <Col xs={3} onClick={()=> onClickSourceHandler(githubLink)} > <i className="feather icon-eye" ></i> Source </Col>
-                        <Col xs={3}> <i className="feather icon-link"></i> Demo </Col>
+                        <Col xs={3}
+                             onClick={()=> onClickSourceHandler(githubLink)}
+                             className="social-link"
+                        >
+                            <i className="feather icon-eye" ></i>
+                            Source
+                        </Col>
+                        <Col xs={3}
+                            onClick={() => onClickSourceHandler(demo)}
+                             className="social-link"
+                        >
+                            <i className="feather icon-link"></i>
+                            Demo
+                        </Col>
                     </Row>
                     <hr/>
                     <Row className="m-0 technology-row justify-content-center " >
