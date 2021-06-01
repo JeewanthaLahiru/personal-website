@@ -113,7 +113,7 @@ const PortfolioItem:React.FC<portfolioItemProps> = (props) => {
                              className="social-link"
                         >
                             <i className="feather icon-eye" ></i>
-                            Source
+                            &nbsp;Source
                         </Col>
                         {   demo !== "" &&
                             <Col xs={4}
@@ -121,12 +121,12 @@ const PortfolioItem:React.FC<portfolioItemProps> = (props) => {
                                  className="social-link"
                             >
                                 <i className="feather icon-link"></i>
-                                Demo
+                                &nbsp;Demo
                             </Col>
                         }
                     </Row>
                     <hr/>
-                    <Row className="m-0 technology-row justify-content-center " >
+                    <Row className="m-0 technology-row justify-content-center align-items-center " >
                         {
                             technology.map((tech:ILogo, index:number)=> {
                                 return(
