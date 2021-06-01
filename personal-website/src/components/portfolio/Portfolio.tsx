@@ -1,5 +1,5 @@
-import React from 'react';
-import {Row} from "react-bootstrap";
+import React, {useState} from 'react';
+import {Button, Col, Row} from "react-bootstrap";
 import {Category, IPortfolio} from "../../types/portfolioTypes";
 import PortfolioItem from "./PortfolioItem";
 
@@ -195,14 +195,69 @@ const temporaryPortfolio:IPortfolio[] = [
 ]
 
 const Portfolio:React.FC = () => {
+
+    const [category, setCategory] = useState('game');
+
+    const onClickAllHandler = () => {
+        setCategory("all");
+    }
+    const onClickGameHandler = () => {
+        setCategory("game");
+    }
+    const onClickWebHandler = () => {
+        setCategory("web");
+    }
+
     return(
         <React.Fragment>
-            <Row className="m-0">
+            <Row className="m-0 pt-5 px-xl-3">
+                <Col xs={12} >
+                    <Row className="mx-0 mt-5 pl-2 ">
+                        <Button onClick={onClickAllHandler}
+                                className="mr-3 px-4"
+                                variant={category==='all'? 'success' : 'primary'}
+                        >
+                            All
+                        </Button>
+                        <Button onClick={onClickWebHandler}
+                                className="mr-3 px-3 "
+                                variant={category==='web'? 'success' : 'primary'}
+                        >
+                            Web
+                        </Button>
+                        <Button onClick={onClickGameHandler}
+                                className="mr-3"
+                                variant={category==='game'? 'success' : 'primary'}
+                        >
+                            Games
+                        </Button>
+                    </Row>
+
+                </Col>
                 {
-                    temporaryPortfolio.map((port:IPortfolio) => {
-                        return(
-                            <PortfolioItem portfolioItem={port}/>
-                        )
+                    temporaryPortfolio.map((port:IPortfolio, index:number) => {
+                        switch (category) {
+                            case 'all':
+                                return(
+                                    <PortfolioItem portfolioItem={port}/>
+                                )
+                            case 'web':
+                                if(port.category === "WEB"){
+                                    return(
+                                        <PortfolioItem portfolioItem={port}/>
+                                    )
+                                }
+                                break;
+                            case 'game':
+                                if(port.category === "GAMING"){
+                                    return(
+                                        <PortfolioItem portfolioItem={port}/>
+                                    )
+                                }
+                                break;
+
+                        }
+
                     })
                 }
             </Row>
