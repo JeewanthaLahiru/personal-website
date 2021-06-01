@@ -12,7 +12,7 @@ const temporaryPortfolio:IPortfolio[] = [
         mainTitle:'GAme',
         timeDuration:"2012",
         description:"description1",
-        githubLink:"githubLink1",
+        githubLink:"https://github.com/JeewanthaLahiru/personal-website",
         demo:"demo1",
         technology:[
             {

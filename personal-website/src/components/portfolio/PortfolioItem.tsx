@@ -28,6 +28,14 @@ const findImage = (imgName:string) => {
     }
 }
 
+const openInNewTab = (url:string) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null
+}
+const onClickSourceHandler = (url:string) => {
+    openInNewTab(url);
+}
+
 
 const PortfolioItem:React.FC<portfolioItemProps> = (props) => {
 
@@ -60,7 +68,7 @@ const PortfolioItem:React.FC<portfolioItemProps> = (props) => {
 
                     </Row>
                     <Row className="justify-content-center mt-3" >
-                        <Col xs={3}> <i className="feather icon-eye" ></i> Source </Col>
+                        <Col xs={3} onClick={()=> onClickSourceHandler(githubLink)} > <i className="feather icon-eye" ></i> Source </Col>
                         <Col xs={3}> <i className="feather icon-link"></i> Demo </Col>
                     </Row>
                     <hr/>
