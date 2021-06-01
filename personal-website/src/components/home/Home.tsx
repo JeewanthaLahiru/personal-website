@@ -12,7 +12,7 @@ const Home:React.FC = () => {
                 </Col>
             </Row>
             <Row className="personal-details mx-0 px-xl-4">
-                <Col xs={4}>
+                <Col xl={4} xs={12}>
                     <Row className="m-0">
                         <Col xl={12} className="detail-col p-4">
                             <Row className="image-row" >
@@ -38,7 +38,7 @@ const Home:React.FC = () => {
                     </Row>
                 </Col>
 
-                <Col xl={8}>
+                <Col xs={12} xl={8} className="mt-sm-4 mt-xl-0">
                     <Row className="m-0">
                         <Col className="detail-col pt-2" xs={12}>
                           <h4 className="text-left">About me</h4>
@@ -74,6 +74,41 @@ const Home:React.FC = () => {
                                     />
                                 </Col>
                             </Row>
+                            <h4 className="text-left mt-4 mb-3">Developer Details</h4>
+                            <Row className="m-0">
+                                <Col xs={6} className="pt-4">
+                                    <Form.Label className="align-left" >Favourite Languages</Form.Label>
+                                    <Form.Control type="text"
+                                                  value="Typescript, C#"
+                                                  disabled={true}
+                                    />
+                                </Col>
+                                <Col xs={6} className="pt-4">
+                                    <Form.Label className="align-left" >Favourite front-end framework</Form.Label>
+                                    <Form.Control type="text"
+                                                  value="ReactJs"
+                                                  disabled={true}
+                                    />
+                                </Col>
+                                <Col xs={6} className="pt-4">
+                                    <Form.Label className="align-left" >Favourite back-end framework</Form.Label>
+                                    <Form.Control type="text"
+                                                  value="Express-js"
+                                                  disabled={true}
+                                    />
+                                </Col>
+                                <Col xs={6} className="pt-4">
+                                    <Form.Label className="align-left" >Favourite Game engine</Form.Label>
+                                    <Form.Control type="text"
+                                                  value="Unity"
+                                                  disabled={true}
+                                    />
+                                </Col>
+
+                            </Row>
+
+                            <h4 className="text-left mt-4 mb-3">Find me on</h4>
+
                         </Col>
                     </Row>
                 </Col>
