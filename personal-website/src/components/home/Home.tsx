@@ -148,29 +148,29 @@ const Home:React.FC = () => {
                             <h5 className="text-left mt-4 mb-3">Find me on</h5>
                             <Row className="mx-0 mb-5 socialMediaRow" >
                                 <SocialIcon imageLink={FacebookLogo}
-                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
+                                            socialLink={"https://www.facebook.com/jeewantha.lahiru.9"}
                                 />
 
                                 <SocialIcon imageLink={InstagramLogo}
-                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
+                                            socialLink={"https://www.instagram.com/jilerr/?hl=en"}
                                 />
                                 <SocialIcon imageLink={LinkedInLogo}
                                             socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
                                 />
                                 <SocialIcon imageLink={GithubLogo}
-                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
+                                            socialLink={"https://github.com/JeewanthaLahiru"}
                                 />
                                 <SocialIcon imageLink={HackerRankLogo}
-                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
+                                            socialLink={"https://www.hackerrank.com/JeewanthaLahiru"}
                                 />
                                 <SocialIcon imageLink={TwitterLogo}
-                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
+                                            socialLink={"https://twitter.com/JeewanthaLahir1"}
                                 />
                                 <SocialIcon imageLink={MediumLogo}
-                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
+                                            socialLink={"https://jeewanthalahiru.medium.com/"}
                                 />
                                 <SocialIcon imageLink={StackoverflowLogo}
-                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
+                                            socialLink={"https://stackoverflow.com/users/11067971/jeewantha-lahiru"}
                                 />
                                 
                             </Row>
