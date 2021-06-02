@@ -1,4 +1,5 @@
 import React from 'react';
+import {Col, Image} from "react-bootstrap";
 
 type socialIconProps = {
     imageLink : string,
@@ -7,9 +8,9 @@ type socialIconProps = {
 
 const SocialIcon:React.FC<socialIconProps> = (props) => {
     return(
-        <div>
-            Hello social Icon
-        </div>
+        <Col xs={2} className="socialIcon" >
+           <Image src={props.imageLink} />
+        </Col>
     )
 }
 
