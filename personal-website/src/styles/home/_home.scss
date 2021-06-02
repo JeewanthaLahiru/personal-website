@@ -1,7 +1,7 @@
 .personal-details{
   margin-top: 100px;
   .detail-col{
-    background-color: white;
+    background-color: #f1f1f1;
     border-radius: 7px;
 
     .form-label{
@@ -27,6 +27,25 @@
           top:-5px;
         }
       }
+    }
+
+    .socialMediaRow{
+      padding: 0 100px;
+      .socialIcon{
+        width: 100px;
+        padding: 5px 10px;
+        .innerDiv{
+          padding: 18px;
+          border-radius: 5px;
+          background-color: white;
+          img{
+            width: 100%;
+          }
+        }
+
+
+      }
+
     }
 
   }

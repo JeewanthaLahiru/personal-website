@@ -8,9 +8,12 @@ type socialIconProps = {
 
 const SocialIcon:React.FC<socialIconProps> = (props) => {
     return(
-        <Col xs={2} className="socialIcon" >
-           <Image src={props.imageLink} />
-        </Col>
+        <div className="socialIcon col-md-15" >
+            <div className="innerDiv">
+                <Image src={props.imageLink} />
+            </div>
+
+        </div>
     )
 }
 

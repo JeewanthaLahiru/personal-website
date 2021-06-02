@@ -1,6 +1,8 @@
 import React from "react";
 import {Col, Form, Image, Row} from "react-bootstrap";
 import MyPhoto from "../../assets/images/profile/profile3.jpg";
+import Typescript from "../../assets/images/portfolio-image/typescript.png";
+import SocialIcon from "./SocialIcon";
 
 const Home:React.FC = () => {
     return(
@@ -111,6 +113,49 @@ const Home:React.FC = () => {
                             </Row>
                             <hr/>
                             <h5 className="text-left mt-4 mb-3">Find me on</h5>
+                            <Row className="mx-0 mb-5 socialMediaRow" >
+                                <SocialIcon imageLink={Typescript}
+                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
+                                />
+
+                                <SocialIcon imageLink={Typescript}
+                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
+                                />
+                                <SocialIcon imageLink={Typescript}
+                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
+                                />
+                                <SocialIcon imageLink={Typescript}
+                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
+                                />
+                                <SocialIcon imageLink={Typescript}
+                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
+                                />
+                                <SocialIcon imageLink={Typescript}
+                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
+                                />
+                                <SocialIcon imageLink={Typescript}
+                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
+                                />
+                                <SocialIcon imageLink={Typescript}
+                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
+                                />
+                                <SocialIcon imageLink={Typescript}
+                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
+                                />
+                                <SocialIcon imageLink={Typescript}
+                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
+                                />
+                                <SocialIcon imageLink={Typescript}
+                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
+                                />
+                                <SocialIcon imageLink={Typescript}
+                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
+                                />
+                                <SocialIcon imageLink={Typescript}
+                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
+                                />
+                                
+                            </Row>
 
                         </Col>
                     </Row>
