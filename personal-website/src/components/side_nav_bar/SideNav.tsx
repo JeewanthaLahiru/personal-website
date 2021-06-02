@@ -1,11 +1,56 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Col, Row} from "react-bootstrap";
 import {Link} from 'react-router-dom';
+import { useDetectClickOutside } from 'react-detect-click-outside';
 
 const SideNav:React.FC = () => {
 
+    const [mobileNavBar, setMobileNavBar] = useState(false);
+    const handleOnNavBtn = () => {
+        setMobileNavBar(!mobileNavBar);
+    }
+
+    const handleOnCloseOut = () => {
+        setMobileNavBar(false);
+    }
+
+    const ref = useDetectClickOutside({onTriggered:handleOnCloseOut});
+
     return(
+        <React.Fragment>
+            <div onClick={handleOnNavBtn} ref={ref} className="mobile-nav-button">
+                {mobileNavBar? <i className="feather icon-x text-white" ></i> : <i className="feather icon-menu text-white" ></i>}
+            </div>
+
+            {   mobileNavBar &&
+                <div className="mobile-navbar">
+                    <Row className="m-0 py-5" >
+                        <Col xs={12} className="p-3" >
+                            <Link to="/">Profile</Link>
+                        </Col>
+                        <Col xs={12} className="p-3" >
+                            <Link to="/stats">Stats</Link>
+                        </Col>
+                        <Col xs={12} className="p-3" >
+                            <Link to="/education">Education</Link>
+                        </Col>
+                        <Col xs={12} className="p-3" >
+                            <Link to="/skills">Skills</Link>
+                        </Col>
+                        <Col xs={12} className="p-3" >
+                            <Link to="/profile">Portfolio</Link>
+                        </Col>
+                        <Col xs={12} className="p-3" >
+                            <Link to="/contact">Contact</Link>
+                        </Col>
+
+                    </Row>
+                </div>
+            }
+
+
             <div className="side-nav-bar m-0" >
+
                 <Row className="p-0">
                     <Col xs={12} className="brand-name-background mt-3" >
                         <h1 className="text-white text-center mt-3 brand-name">Jeewantha</h1>
@@ -54,57 +99,8 @@ const SideNav:React.FC = () => {
                         </ul>
                     </Col>
                 </Row>
-                {/*<Navbar expand="md">
-                    <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-                    <Navbar.Collapse id="basic-navbar-nav">
-
-                        <Row className="side-nav-bar-item">
-                            <Col className="p-1">
-                                <ul className="navbar-nav mr-auto flex-column vertical-nav">
-                                    <Nav.Item>
-                                        <Nav.Link className="text-left">
-                                            &nbsp;&nbsp;<i className="feather icon-user"/>
-                                            &nbsp;&nbsp;Portfolio
-                                        </Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link className="text-left">
-                                            &nbsp;&nbsp;<i className="feather icon-pie-chart"/>
-                                            &nbsp;&nbsp;Stats
-                                        </Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link className="text-left">
-                                            &nbsp;&nbsp;<i className="feather icon-hard-drive"/>
-                                            &nbsp;&nbsp;Education
-                                        </Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link className="text-left">
-                                            &nbsp;&nbsp;<i className="feather icon-bar-chart-2"/>
-                                            &nbsp;&nbsp;Skills
-                                        </Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link className="text-left">
-                                            &nbsp;&nbsp;<i className="feather icon-box"/>
-                                            &nbsp;&nbsp;Portfolio
-                                        </Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link className="text-left">
-                                            &nbsp;&nbsp;<i className="feather icon-smartphone"/>
-                                            &nbsp;&nbsp;Contact
-                                        </Nav.Link>
-                                    </Nav.Item>
-                                </ul>
-                            </Col>
-                        </Row>
-                    </Navbar.Collapse>
-
-                </Navbar>*/}
             </div>
-
+        </React.Fragment>
     )
 }
 

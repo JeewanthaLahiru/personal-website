@@ -1,3 +1,104 @@
-.home{
+.name-row{
+  h1{
+    font-size: 3rem;
+  }
+}
+.personal-details{
+  margin-top: 100px;
+  p{
+    color: #575656;
+  }
+  .detail-col{
+    background-color: #f1f1f1;
+    border-radius: 7px;
 
+    h4{
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    h5{
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #8e8e8e;
+    }
+
+    .form-label{
+      width: 100%;
+      text-align: left;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+    .form-control{
+      border: none;
+      background-color: $dark-light-background;
+      color: #ececec;
+    }
+
+    .image-row{
+      .image-area{
+        height: 140px;
+        width: 100px;
+        position: relative;
+        img{
+          position: absolute;
+          height: 200px;
+          width: 200px;
+          transform: translate(-50%,-40%);
+          object-fit: cover;
+          left: 50%;
+          border-radius: 50%;
+        }
+        img:hover{
+          top:-5px;
+        }
+      }
+    }
+
+    .socialMediaRow{
+      padding: 0 100px;
+      .socialIcon{
+        width: 100px;
+        padding: 5px 10px;
+        .innerDiv{
+          padding: 18px;
+          position: relative;
+          border-radius: 5px;
+          background-color: white;
+          transition: .3s;
+          img{
+            width: 100%;
+          }
+        }
+        .innerDiv:after{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 100%;
+          background-color: rgba(255,255,255,0.4);
+          -webkit-transition: none;
+          -moz-transition: none;
+          transition: none;
+        }
+        .innerDiv:hover{
+          cursor: pointer;
+          transform: translateY(-7px);
+          transition: .3s;
+        }
+        .innerDiv:hover:after{
+          width: 120%;
+          background-color: rgba(255,255,255,0);
+
+          -webkit-transition: all 0.4s ease-in-out;
+          -moz-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
+        }
+
+
+      }
+
+    }
+
+  }
 }
