@@ -73,7 +73,7 @@ const Home:React.FC = () => {
                 </Col>
 
                 <Col xs={12} xl={8} className="mt-sm-4 mt-xl-0">
-                    <Row className="m-0">
+                    <Row className="mx-0 mb-5">
                         <Col className="detail-col pt-3" xs={12}>
                           <h4 className="text-left">About me</h4>
                             <hr/>
