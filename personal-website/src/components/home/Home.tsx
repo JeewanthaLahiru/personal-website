@@ -1,7 +1,6 @@
 import React from "react";
 import {Col, Form, Image, Row} from "react-bootstrap";
 import MyPhoto from "../../assets/images/profile/profile3.jpg";
-import Typescript from "../../assets/images/portfolio-image/typescript.png";
 import SocialIcon from "./SocialIcon";
 import Typewriter from "typewriter-effect";
 
@@ -56,12 +55,12 @@ const Home:React.FC = () => {
                                 </Col>
                             </Row>
                             <h2>Jeewantha Lahiru</h2>
-                            <p>Galgoda, Mahawalathenna, Balangoda,</p>
-                            <p>Sri lanka</p>
-                            <p>Bsc (Hons) Software Engineering</p>
+                            <p className="m-0" >Galgoda, Mahawalathenna, Balangoda,</p>
+                            <p className="m-0">Sri lanka</p>
+                            <p className="m-0">Bsc (Hons) Software Engineering</p>
                             <p>University of Kelaniya</p>
 
-                            <hr/>
+                            <hr className="my-4" />
 
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -81,14 +80,14 @@ const Home:React.FC = () => {
                             <h5 className="text-left" >Contact Details</h5>
                             <Row className="mx-0 mt-1 mb-5">
 
-                                <Col xs={6} className="pt-4">
+                                <Col xs={12} lg={6} className="pt-4">
                                     <Form.Label className="align-left" >Mobile</Form.Label>
                                     <Form.Control type="text"
                                                   value="0710343246"
                                                   disabled={true}
                                     />
                                 </Col>
-                                <Col xs={6} className="pt-4">
+                                <Col xs={12} lg={6} className="pt-4">
                                     <Form.Label className="align-left" >Email Address</Form.Label>
                                     <Form.Control type="text"
                                                   value="jeewanthalahiru1111@gmail.com"
@@ -96,14 +95,14 @@ const Home:React.FC = () => {
                                     />
                                 </Col>
 
-                                <Col xs={6} className="pt-4">
+                                <Col xs={12} lg={6} className="pt-4">
                                     <Form.Label className="align-left" >Date of Birth</Form.Label>
                                     <Form.Control type="text"
                                                   value="Jan 02 1998 (23)"
                                                   disabled={true}
                                     />
                                 </Col>
-                                <Col xs={6} className="pt-4">
+                                <Col xs={12} lg={6} className="pt-4">
                                     <Form.Label className="align-left" >Career goal</Form.Label>
                                     <Form.Control type="text"
                                                   value="Game Developer"
@@ -114,28 +113,28 @@ const Home:React.FC = () => {
                             <hr/>
                             <h5 className="text-left mt-4 mb-3">Developer Details</h5>
                             <Row className="mx-0 mb-5">
-                                <Col xs={6} className="pt-4">
+                                <Col xs={12} lg={6} className="pt-4">
                                     <Form.Label className="align-left" >Favourite Languages</Form.Label>
                                     <Form.Control type="text"
                                                   value="Typescript, C#"
                                                   disabled={true}
                                     />
                                 </Col>
-                                <Col xs={6} className="pt-4">
+                                <Col xs={12} lg={6} className="pt-4">
                                     <Form.Label className="align-left" >Favourite front-end framework</Form.Label>
                                     <Form.Control type="text"
                                                   value="ReactJs"
                                                   disabled={true}
                                     />
                                 </Col>
-                                <Col xs={6} className="pt-4">
+                                <Col xs={12} lg={6} className="pt-4">
                                     <Form.Label className="align-left" >Favourite back-end framework</Form.Label>
                                     <Form.Control type="text"
                                                   value="Express-js"
                                                   disabled={true}
                                     />
                                 </Col>
-                                <Col xs={6} className="pt-4">
+                                <Col xs={12} lg={6} className="pt-4">
                                     <Form.Label className="align-left" >Favourite Game engine</Form.Label>
                                     <Form.Control type="text"
                                                   value="Unity"
