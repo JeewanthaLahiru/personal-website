@@ -5,6 +5,15 @@ import Typescript from "../../assets/images/portfolio-image/typescript.png";
 import SocialIcon from "./SocialIcon";
 import Typewriter from "typewriter-effect";
 
+import FacebookLogo from "../../assets/images/social media image/facebook.png";
+import InstagramLogo from "../../assets/images/social media image/instagram.png";
+import LinkedInLogo from "../../assets/images/social media image/linkedin.png";
+import GithubLogo from "../../assets/images/social media image/github.png";
+import HackerRankLogo from "../../assets/images/social media image/hackerrank.png";
+import TwitterLogo from "../../assets/images/social media image/twitter.png";
+import MediumLogo from "../../assets/images/social media image/medium.png";
+import StackoverflowLogo from "../../assets/images/social media image/stackoverflow.png";
+
 const Home:React.FC = () => {
     return(
         <React.Fragment>
@@ -138,44 +147,29 @@ const Home:React.FC = () => {
                             <hr/>
                             <h5 className="text-left mt-4 mb-3">Find me on</h5>
                             <Row className="mx-0 mb-5 socialMediaRow" >
-                                <SocialIcon imageLink={Typescript}
+                                <SocialIcon imageLink={FacebookLogo}
                                             socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
                                 />
 
-                                <SocialIcon imageLink={Typescript}
+                                <SocialIcon imageLink={InstagramLogo}
                                             socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
                                 />
-                                <SocialIcon imageLink={Typescript}
+                                <SocialIcon imageLink={LinkedInLogo}
                                             socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
                                 />
-                                <SocialIcon imageLink={Typescript}
+                                <SocialIcon imageLink={GithubLogo}
                                             socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
                                 />
-                                <SocialIcon imageLink={Typescript}
+                                <SocialIcon imageLink={HackerRankLogo}
                                             socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
                                 />
-                                <SocialIcon imageLink={Typescript}
+                                <SocialIcon imageLink={TwitterLogo}
                                             socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
                                 />
-                                <SocialIcon imageLink={Typescript}
+                                <SocialIcon imageLink={MediumLogo}
                                             socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
                                 />
-                                <SocialIcon imageLink={Typescript}
-                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
-                                />
-                                <SocialIcon imageLink={Typescript}
-                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
-                                />
-                                <SocialIcon imageLink={Typescript}
-                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
-                                />
-                                <SocialIcon imageLink={Typescript}
-                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
-                                />
-                                <SocialIcon imageLink={Typescript}
-                                            socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
-                                />
-                                <SocialIcon imageLink={Typescript}
+                                <SocialIcon imageLink={StackoverflowLogo}
                                             socialLink={"https://www.linkedin.com/in/jeewantha-lahiru-b85b2917b/"}
                                 />
                                 
