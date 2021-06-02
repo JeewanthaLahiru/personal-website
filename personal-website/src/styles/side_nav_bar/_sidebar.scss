@@ -7,6 +7,7 @@
   }
 }
 .mobile-nav-button{
+  animation: 1s ease-out 0s 1 slideInFromTop;
   display: none;
   width: 50px;
   height: 50px;
@@ -36,6 +37,19 @@
   color: white;
   z-index: 1;
   padding-top: 90px;
+  .row{
+    div{
+      a{
+        font-size: 1.5rem;
+        color: $font-light;
+        font-family: 'Roboto', sans-serif;
+      }
+      a:hover{
+        text-decoration: none;
+        color: $font-white;
+      }
+    }
+  }
 }
 
 .side-nav-bar{
