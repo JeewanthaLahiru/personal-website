@@ -38,9 +38,15 @@
           padding: 18px;
           border-radius: 5px;
           background-color: white;
+          transition: .3s;
           img{
             width: 100%;
           }
+        }
+        .innerDiv:hover{
+          cursor: pointer;
+          transform: translateY(-7px);
+          transition: .3s;
         }
 
 
