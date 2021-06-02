@@ -1,6 +1,6 @@
 import React from "react";
 import {Col, Form, Image, Row} from "react-bootstrap";
-import Typescript from "../../assets/images/portfolio-image/typescript.png";
+import MyPhoto from "../../assets/images/profile/profile3.jpg";
 
 const Home:React.FC = () => {
     return(
@@ -17,7 +17,7 @@ const Home:React.FC = () => {
                         <Col xl={12} className="detail-col p-4">
                             <Row className="image-row" >
                                 <Col className="image-area" xs={12}>
-                                    <Image src={Typescript} />
+                                    <Image src={MyPhoto} />
                                 </Col>
                             </Row>
                             <h2>Jeewantha Lahiru</h2>
