@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Col, Row} from "react-bootstrap";
 import {Link} from 'react-router-dom';
+import { useDetectClickOutside } from 'react-detect-click-outside';
 
 const SideNav:React.FC = () => {
 
@@ -9,9 +10,15 @@ const SideNav:React.FC = () => {
         setMobileNavBar(!mobileNavBar);
     }
 
+    const handleOnCloseOut = () => {
+        setMobileNavBar(false);
+    }
+
+    const ref = useDetectClickOutside({onTriggered:handleOnCloseOut});
+
     return(
         <React.Fragment>
-            <div onClick={handleOnNavBtn} className="mobile-nav-button">
+            <div onClick={handleOnNavBtn} ref={ref} className="mobile-nav-button">
                 {mobileNavBar? <i className="feather icon-x text-white" ></i> : <i className="feather icon-menu text-white" ></i>}
             </div>
 
