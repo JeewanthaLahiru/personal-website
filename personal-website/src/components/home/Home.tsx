@@ -3,14 +3,38 @@ import {Col, Form, Image, Row} from "react-bootstrap";
 import MyPhoto from "../../assets/images/profile/profile3.jpg";
 import Typescript from "../../assets/images/portfolio-image/typescript.png";
 import SocialIcon from "./SocialIcon";
+import Typewriter from "typewriter-effect";
 
 const Home:React.FC = () => {
     return(
         <React.Fragment>
-            <Row className="m-0 px-xl-4 py-4" >
+            <Row className="m-0 px-xl-4 pt-4 pb-2 name-row" >
                 <Col xs={12}>
-                    <h1 className="text-light text-left" >Hello I'm Jeewantha</h1>
-                    <h3 className="text-light text-left" >I'm a fullstack Web/ Game developer</h3>
+                    <h1 className="text-light text-left" >
+                        <Typewriter
+                            onInit={(typewriter) => {
+                                typewriter.typeString('Hello World!')
+                                    .callFunction(() => {
+                                        console.log('String typed out!');
+                                    })
+                                    .pauseFor(2500)
+                                    .deleteAll()
+                                    .callFunction(() => {
+                                        console.log('All strings were deleted');
+                                    })
+                                    .start();
+                            }}
+                            options={{
+                                strings: ['Hello I\'m Jeewantha Lahiru',
+                                    'I\'m a full stack Web developer...',
+                                    'I\'m also a Game developer...'],
+                                autoStart: true,
+                                loop: true,
+                            }}
+                        />
+                    </h1>
+
+
                 </Col>
             </Row>
             <Row className="personal-details mx-0 px-xl-4">
@@ -42,7 +66,7 @@ const Home:React.FC = () => {
 
                 <Col xs={12} xl={8} className="mt-sm-4 mt-xl-0">
                     <Row className="m-0">
-                        <Col className="detail-col pt-2" xs={12}>
+                        <Col className="detail-col pt-3" xs={12}>
                           <h4 className="text-left">About me</h4>
                             <hr/>
                             <h5 className="text-left" >Contact Details</h5>
