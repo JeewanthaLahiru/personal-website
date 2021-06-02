@@ -42,7 +42,9 @@ const Home:React.FC = () => {
                     <Row className="m-0">
                         <Col className="detail-col pt-2" xs={12}>
                           <h4 className="text-left">About me</h4>
-                            <Row className="mx-0 mt-1">
+                            <hr/>
+                            <h5 className="text-left" >Contact Details</h5>
+                            <Row className="mx-0 mt-1 mb-5">
 
                                 <Col xs={6} className="pt-4">
                                     <Form.Label className="align-left" >Mobile</Form.Label>
@@ -74,8 +76,9 @@ const Home:React.FC = () => {
                                     />
                                 </Col>
                             </Row>
-                            <h4 className="text-left mt-4 mb-3">Developer Details</h4>
-                            <Row className="m-0">
+                            <hr/>
+                            <h5 className="text-left mt-4 mb-3">Developer Details</h5>
+                            <Row className="mx-0 mb-5">
                                 <Col xs={6} className="pt-4">
                                     <Form.Label className="align-left" >Favourite Languages</Form.Label>
                                     <Form.Control type="text"
@@ -106,8 +109,8 @@ const Home:React.FC = () => {
                                 </Col>
 
                             </Row>
-
-                            <h4 className="text-left mt-4 mb-3">Find me on</h4>
+                            <hr/>
+                            <h5 className="text-left mt-4 mb-3">Find me on</h5>
 
                         </Col>
                     </Row>
