@@ -1,6 +1,11 @@
 import React from 'react';
 
-const SocialIcon:React.FC = () => {
+type socialIconProps = {
+    imageLink : string,
+    socialLink : string
+}
+
+const SocialIcon:React.FC<socialIconProps> = (props) => {
     return(
         <div>
             Hello social Icon
