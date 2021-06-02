@@ -21,7 +21,7 @@ const Home:React.FC = () => {
                     <h1 className="text-light text-left" >
                         <Typewriter
                             onInit={(typewriter) => {
-                                typewriter.typeString('Hello World!')
+                                typewriter.typeString('Hello I\'m Jeewantha Lahiru')
                                     .callFunction(() => {
 
                                     })

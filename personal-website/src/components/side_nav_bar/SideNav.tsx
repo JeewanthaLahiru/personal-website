@@ -25,12 +25,24 @@ const SideNav:React.FC = () => {
             {   mobileNavBar &&
                 <div className="mobile-navbar">
                     <Row className="m-0 py-5" >
-                        <Col xs={12} className="p-3" >Home</Col>
-                        <Col xs={12} className="p-3" >Home</Col>
-                        <Col xs={12} className="p-3" >Home</Col>
-                        <Col xs={12} className="p-3" >Home</Col>
-                        <Col xs={12} className="p-3" >Home</Col>
-                        <Col xs={12} className="p-3" >Home</Col>
+                        <Col xs={12} className="p-3" >
+                            <Link to="/">Profile</Link>
+                        </Col>
+                        <Col xs={12} className="p-3" >
+                            <Link to="/stats">Stats</Link>
+                        </Col>
+                        <Col xs={12} className="p-3" >
+                            <Link to="/education">Education</Link>
+                        </Col>
+                        <Col xs={12} className="p-3" >
+                            <Link to="/skills">Skills</Link>
+                        </Col>
+                        <Col xs={12} className="p-3" >
+                            <Link to="/profile">Portfolio</Link>
+                        </Col>
+                        <Col xs={12} className="p-3" >
+                            <Link to="/contact">Contact</Link>
+                        </Col>
 
                     </Row>
                 </div>
@@ -38,9 +50,7 @@ const SideNav:React.FC = () => {
 
 
             <div className="side-nav-bar m-0" >
-                <Row className="m-0 mobile-navbar">
 
-                </Row>
                 <Row className="p-0">
                     <Col xs={12} className="brand-name-background mt-3" >
                         <h1 className="text-white text-center mt-3 brand-name">Jeewantha</h1>
