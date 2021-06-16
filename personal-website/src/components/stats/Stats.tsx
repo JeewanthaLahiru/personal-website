@@ -8,7 +8,7 @@ const Stats:React.FC = () => {
     return(
         <React.Fragment>
             <Row className="mx-0 pt-5 stat-page">
-                <Col xs={7} className="pr-xl-0 ">
+                <Col xl={7} xs={12} className="pr-xl-0 ">
                     <Row className="m-0 p-0">
                         <Col xs={12} className="stat-item " >
                             <Row className="m-0">
@@ -45,7 +45,7 @@ const Stats:React.FC = () => {
                         </Col>
                     </Row>
                 </Col>
-                <Col xs={5}>
+                <Col xl={5} xs={12}>
                     <Row className="mx-0">
                         <Col xs={12} className="stat-item" >
                             <Row className="m-0">
@@ -75,8 +75,12 @@ const Stats:React.FC = () => {
                                 <Col xs={10} className="pl-5">
                                     <h4 className="text-left stat-title mt-2" >Stack<b>overflow</b></h4>
                                     <h5 className="text-left stat-subtitle " >302 Reputations</h5>
-                                    <br/>
 
+                                    <h5 className="stack-reput text-left">
+                                        <span className="gold">&#x25CF;0&nbsp;&nbsp;</span>
+                                        <span className="silver">&#x25CF;2&nbsp;&nbsp;</span>
+                                        <span className="bronze" >&#x25CF;13</span>
+                                    </h5>
                                 </Col>
                             </Row>
                         </Col>

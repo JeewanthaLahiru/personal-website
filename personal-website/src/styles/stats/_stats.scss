@@ -1,10 +1,16 @@
 .stat-page{
 
-  .badge{
-    display: block;
-    width: 5px;
-    height: 5px;
-    background-color: red;
+  .stack-reput{
+    font-size: 0.9em;
+    .gold{
+      color: $font-gold;
+    }
+    .silver{
+      color: $font-silver;
+    }
+    .bronze{
+      color: $font-bronze;
+    }
   }
 
   .stat-title{
@@ -27,6 +33,18 @@
   }
 }
 .stat-item{
+  .badge-row{
+    .badge{
+      min-width: 10px;
+      .badge-item{
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: red;
+    }
+    }
+  }
   background-color: white;
   border-radius: 7px;
   padding: 15px;
