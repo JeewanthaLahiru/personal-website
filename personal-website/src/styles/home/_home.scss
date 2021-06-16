@@ -1,9 +1,11 @@
 .name-row{
+  font-family: 'Roboto', sans-serif;
   h1{
     font-size: 3rem;
   }
 }
 .personal-details{
+  font-family: 'Roboto', sans-serif;
   margin-top: 100px;
   p{
     color: #575656;
@@ -100,5 +102,11 @@
 
     }
 
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .name-row{
+    height: 150px;
   }
 }
