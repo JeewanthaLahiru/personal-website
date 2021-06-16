@@ -1,8 +1,11 @@
 import React from 'react';
+import NotFound from "../notfound/NotFound";
 
 const Stats:React.FC = () => {
     return(
-        <div>hello stats</div>
+        <React.Fragment>
+            <NotFound/>
+        </React.Fragment>
     )
 }
 

@@ -62,10 +62,18 @@ const Home:React.FC = () => {
 
                             <hr className="my-4" />
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit</p>
+                            <p>I'm a tech enthusiastic, passionate to
+                                follow a job in the Software Engineering
+                                field. To achieve that goal currently, I
+                                am seeking an opportunity for an
+                                internship. I have the capability of
+                                interacting with different types of
+                                people and working together as a team
+                                with a good team spirit. Good in both
+                                technical and soft skills. I wish to start
+                                the career as an Associate Software
+                                Engineer and to move upwards step by
+                                step in this field.</p>
 
 
                         </Col>

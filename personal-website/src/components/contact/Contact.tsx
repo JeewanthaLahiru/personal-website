@@ -1,8 +1,11 @@
 import React from 'react';
+import NotFound from "../notfound/NotFound";
 
 const Contact:React.FC = () => {
     return(
-        <div>hello contact</div>
+        <React.Fragment>
+            <NotFound/>
+        </React.Fragment>
     )
 }
 
