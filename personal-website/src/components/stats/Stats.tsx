@@ -72,6 +72,12 @@ const Stats:React.FC = () => {
                                 <Col xs={2}>
                                     <Image className="social-icon" src={Stack} />
                                 </Col>
+                                <Col xs={10} className="pl-5">
+                                    <h4 className="text-left stat-title mt-2" >Stack<b>overflow</b></h4>
+                                    <h5 className="text-left stat-subtitle " >302 Reputations</h5>
+                                    <br/>
+
+                                </Col>
                             </Row>
                         </Col>
                     </Row>

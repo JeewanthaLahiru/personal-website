@@ -1,4 +1,12 @@
 .stat-page{
+
+  .badge{
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: red;
+  }
+
   .stat-title{
     color: $font-dark-clr;
     font-family: 'Roboto', sans-serif;
@@ -24,8 +32,8 @@
   padding: 15px;
   margin-bottom: 15px;
   .social-icon{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     object-fit: cover;
     border-radius: 50%;
   }
