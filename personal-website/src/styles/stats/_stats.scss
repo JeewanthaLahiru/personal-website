@@ -1,0 +1,65 @@
+.stat-page{
+
+  .stack-reput{
+    font-size: 0.9em;
+    .gold{
+      color: $font-gold;
+    }
+    .silver{
+      color: $font-silver;
+    }
+    .bronze{
+      color: $font-bronze;
+    }
+  }
+
+  .stat-title{
+    color: $font-dark-clr;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+  .stat-subtitle{
+    color: $font-low-clr;
+    font-size: 1em;
+    font-weight: 400;
+  }
+  .stat-details{
+    color: $font-medium-clr;
+    font-size: 1em;
+    font-weight: 400;
+  }
+  .contri{
+    font-weight: 500;
+  }
+}
+.stat-item{
+  .badge-row{
+    .badge{
+      min-width: 10px;
+      .badge-item{
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: red;
+    }
+    }
+  }
+  background-color: white;
+  border-radius: 7px;
+  padding: 15px;
+  margin-bottom: 15px;
+  .social-icon{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .gitDetail{
+    max-width: 100%;
+  }
+  .gitChart{
+    max-width: 100%;
+  }
+}
