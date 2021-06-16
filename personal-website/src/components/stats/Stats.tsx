@@ -25,7 +25,7 @@ const Stats:React.FC = () => {
                                     </h5>
                                     <h5 className="text-left stat-details" >
                                         <i className="feather icon-user-check"/>
-                                         &nbsp; following
+                                         &nbsp; 48 following
                                     </h5>
                                 </Col>
                             </Row>
@@ -53,16 +53,16 @@ const Stats:React.FC = () => {
                                     <Image className="social-icon" src={Medium} />
                                 </Col>
                                 <Col xs={10} className="pl-5">
-                                    <h4 className="text-left stat-title mt-2" >Github</h4>
-                                    <h5 className="text-left stat-subtitle " >49 Repositories</h5>
+                                    <h4 className="text-left stat-title mt-2" >Medium</h4>
+                                    <h5 className="text-left stat-subtitle " >13 Articles</h5>
                                     <br/>
                                     <h5 className="text-left stat-details" >
                                         <i className="feather icon-users"/>
-                                        &nbsp; 28 followers
+                                        &nbsp; 43 followers
                                     </h5>
                                     <h5 className="text-left stat-details" >
                                         <i className="feather icon-user-check"/>
-                                        &nbsp; following
+                                        &nbsp; 70 following
                                     </h5>
                                 </Col>
                             </Row>
